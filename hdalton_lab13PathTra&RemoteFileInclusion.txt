@@ -1,0 +1,35 @@
+Heather Dalton
+11/06/2020
+
+1) Describe in your own words a path traversal attack.
+	A Path traversal attack is aimed to access files outside root directories by using '../' to get to other directories. 
+
+2) Describe in your own words a remote file inclusion attack.
+	A remote file inclusion attack aims to exploit the vulnerabilities in web applications that dynamicallt reference external scripts. 
+
+3) What files can be accessed using this attack?
+	Any file on the virtual machine can be accessed.
+
+4) In addition to /etc/passwd retrieve at least two more files from somewhere on the file system not located in /etc/ or /var/www/. Which files did you retrieve?
+	http://secfarm-106/filei.php?foo=/home/hdalton/sleep.c
+	http://secfarm-106/filei.php?foo=/home/hdalton/buff.c
+
+5) What is the significance of this attack?
+	He was able to gain the information about my remote server. 
+
+6) Who controls the payload code?
+	The attacker has control over the payload code. 
+	
+7) What is b374k?
+	This is the name of the web shell that the attacker uses to access the users terminal and directories.
+
+8) How is it useful for an attacker in the context of remote file inclusion?
+	This is an organized way for an attacker to see the control they have over a person server.
+
+9) What useful information/actions could an attacker access?
+	They have access to read/write/execute anything in the person server. 
+
+10) Include your patched code
+	I added an extra condition in the if statement of the file:
+		if (array_key_exists('foo', $_GET) && strncmp($_GET['foo'], "/var/www/html", 13) == 0 ){} 
+

@@ -1,0 +1,32 @@
+Heather Dalton
+10/09/2020
+
+Part 1: Bounds Checking
+	1)  From step 3: what happens when you exclude the p from the input string above? Why?
+		Its getting the null byte.
+	
+Part 2: Non-executable Stack
+	2)  What difference did the -z execstack flag make?
+		The -z flag recognizes the keyword execstacks which then marks the object as requiring an executable stack.
+		
+	3)  What is the risk in setting the stack executable?
+		The risk of setting a stack executable is that other users can set different things and try running it.
+		
+Part 3: Address Space Layout Randomization (ASLR)
+	4)  From step 3: what is different?
+		Just the addresses are different from each of the .txt files
+	5)  From step 4: what is different?
+		There is no difference between these two text files
+		
+Part 4: Stack Canaries
+	6)  What happened when you tried the attack?
+		The code aborted from running the program. 
+	7)  Can you identify how the canary is added to the stack?
+		The canary is added to the stack by placeing a small integer.
+	8)  What is the basic logic used to set and check the canary value?
+		First its moving the value from %fs to the %rax. Then we move the %rax value to the %rbp. Next the code is run. Finally, after running the code the canary is checked to see if its value was changed. 
+	9)  What is the value of the canary?
+	10) (Bonus) How is the canary value obtained?
+
+
+

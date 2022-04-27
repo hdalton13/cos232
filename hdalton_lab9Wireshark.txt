@@ -1,0 +1,36 @@
+Heather Dalton
+10/16/2020
+
+1)  What is the IP address for placekitten.com
+	Source: 10.121.218.15		
+
+2)  Which sites show up in step 4?
+	The site placekitten.com opens in step 4. It shows a bunch of characters
+
+3)  Does chase.com show up? Why or why not?
+	Chase.com doesn't show up because of its private nature of having https.
+
+4)  What is the destination MAC address? (Note: at the link layer, the destination address is NOT the MAC address for placekitten.com. Rather, it is the MAC address for the local router which is the device your machine has to use to get out to the Internet)
+        The destination of the MAC is the address CC:40:d0:32:9b:5a
+
+5)  What version of the IP protocol is used for this packet?
+	Verson 6
+
+6)  What is the destination IP address?
+	2606:4700:3035::ac43:b450
+
+7)  What is the destination port?
+	80
+
+8)  What is the packet checksum?
+	0xee58
+
+9)  What is the server host name?
+	placekitten.com
+
+10) What is the client User-Agent? What is a “user-agent”?
+	User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
+
+
+	The user-agent shows where the person is located via what systems they are using. For example this person is using a linux operating system.
+

@@ -1,0 +1,39 @@
+Heather Dalton
+09/07/2020
+
+1) Briefly, what is the purpose of netcat?
+	Netcat reads and writes data across network connections using TCP or UDP protocol.
+2) We used many arguments with the nc command. Explain each one of them briefly.
+	A)The command line arugument "nc -l -p 1025 -t" tells the network to us netcat to listen 
+	to the users, the source port, enable telnet negotiation.
+3) Briefly, what is the purpose of ngrep?
+	ngrep purpose is to do the same thing as grep, which looks for files in plain text, but on 		a network setting.
+4) We used many arguments with the ngrep command. Explain each one of them briefly.
+	Sudo --> give user temporary root privileges
+	ngrep --> searches for patterens on a network level
+	-q --> be quiet
+	password --> what it's searching for
+	-d --> device interface
+	eth1 host [rachels] --> the one Eve is snooping on
+5) Was Eve able to intercept the message? Any ideas why?
+	A)Eve was able to intercept the message.
+	B)Eve is able to see the mesage because the command line argument that she typed allowed 		her to see plain text output.
+6) Does it matter how complex Alice’s password is?
+	It doesn't matter how complex Alice's password is because Eve has the plain text of 	Alice's password.
+7) What does the pipe operator do?
+	The pipe operator puts the output from the echo into the output of Alice.
+8) Briefly, what is the purpose of mcrypt?
+	This is a crypting program that encrypts and decripts a file into an extention of nc
+9) We used many arguments with the mcrypt command. Explain each one of them briefly. Include a description of how the pipe was used.
+	nc
+	-l --> listen
+	-p --> source port
+	1025 --> source port number
+	| --> reads the output of nc as the input of mcrypt
+	mcrypt --> crypting program
+	-d --> decrypt
+	-k --> keywords
+	"password123" --> what the key word is
+10) Was Eve able to intercept the encrypted message? Any ideas why?
+	A)Eve was not able to intercept the message.
+	B)Eve is looking for plain text but this new message is encrypted.

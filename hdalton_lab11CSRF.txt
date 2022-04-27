@@ -1,0 +1,20 @@
+Heather Dalton
+10/26/2020
+
+
+1)  What CIA component is/are compromised in this attack?
+	Integrity
+2)  Did SSL prevent the attack?
+	SSL did not prevent the attack. 
+3)  Did centralized-authentication prevent the attack?
+	Centralized-authentication did prevent the attack.
+4)  Was a client-side scripting language used to leverage the attack?
+	The client-side scripting language was used to leverage the attack
+5)  Describe how HTTP referer checking patched vulnerability
+	HTTP referer patches the vulnerability by checking to see if the request comes from the specified website.
+6)  Describe how Synchronizer Token Pattern checking patched vulnerability
+	Synchronizer Token Pattern checking patches the vulnerability by double checking to see if a token is not there or doesn’t match.
+7)  What is the token value or how is it gnerated?
+	 If the token already exists in the session the program sets it. Otherwise it generates a new random token.
+
+

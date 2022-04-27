@@ -1,0 +1,29 @@
+Heather Dalton
+10/07/2020
+
+Part 1: Analysis
+	1) Write the number you calculated for each of the following:
+	       a) VICTIM-RETURN-ADDRESS --> 0x00005555555551d2 compare 0x00005555555551dc
+	       b) WIN-ADDRESS --> 0x0000555555555178
+	       c) GETNAME-FIRST --> 0x000055555555519a
+	       d) STACK-LOCATION-OF-VICTIM-RETURN-ADDRESS --> 0x7fffffffe4b8
+	       e) STACK-DIFF --> (0x7fffffffe4b8 - 0x7fffffffe4a0 =)  24
+	2) What do you notice about the two addressed for name and VICTIM-RETURN-ADDRESS? Are they near each other? Which one is larger? Why?
+		The address of name and VICTIM-RETURN-ADDRESS are not near each other. The VICTIM-RETURN-ADDRESS is larger becasue the declaration of VICTIM-RETURN-ADDRESS was first compared to the name.
+	
+Part 2: Manual ROP Exploitation
+	1) If you won, explain what happened. If not, try again until you win.
+		By setting the address of name to something else I created a buffer overflow, which made it return to a different place. 
+		
+	2) What is the byte sequence that represents WIN-ADDRESS?
+		  0 | 1  | 2  | 3  | 4  | 5  |  6 | 7  |
+		---------------------------------------- 
+		 78 | 51 | 55 | 55 | 55 | 55 | 00 | 00 | 
+
+Part 3: ASLR
+	no questions
+
+Part 4: Authentic ROP Exploitation
+	1) What is the broader impact? Why do we care about return-oriented programming?
+		When sending the malicious input to the rop I got the same value as the WIN-ADDRESS. This tells me that the broader had an impact that over rided the one thing and got the WIN-ADDRESS. We care about return-oriented programming because it allows us to be aware of a vulnerability a lot of code has. This allows us to think of ways to protect againts this type of attack.  
+

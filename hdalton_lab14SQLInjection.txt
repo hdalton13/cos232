@@ -1,0 +1,64 @@
+Heather Dalton
+Due: 11/09/2020
+
+
+
+1)  Questions about the application:
+  	a) What is the programming language used? 
+  		PHP is the programing language used in this application.
+    	b) What is the database used?
+    		The databased used in sql was the bank
+
+2)  Questions about the database schema:
+    	a) How many tables are in the database?
+    		There are two tables. One for the users and one for the registered information.
+    	b) Based on the data in the DB, how might the tables linked together?
+    		Both are connected through database keys. The user table's 'id' is linked with the registers 'userid'.
+
+3)  What does the UNION operator do?
+	This is used ti combine the sesults of two or more SELECT statements.
+
+4)  What is the resulting query?
+	+----+-------------+---------------------+
+	| id | displayname | cc                  |
+	+----+-------------+---------------------+
+	|  1 | George      | 5555 6097 5555 6767 |
+	|  2 | Lacy        | 4444 3434 5678 9999 |
+	|  3 | Andrew      | 3434 3434 3434 3434 |
+	+----+-------------+---------------------+
+	3 rows in set (0.001 sec)
+
+
+5)  What CIA attribute is compromised?
+	Confidentiality is the CIA attribute that was compromised.
+
+6)  Why does the order of the fields matter?
+	The order matters because otherwise the sql wouldn't get what the user was expecting. 
+
+7)  How many queries are run on the database? How, isn’t there only one PHP query executed?
+	Currently there is teo query running on the database. This is becasue there are different files to access.
+
+8)  What are the resulting queries?
+	+----+-------------+---------+--------+
+	| id | description | amount  | userid |
+	+----+-------------+---------+--------+
+	|  5 | deposit     |    2345 |      2 |
+	|  6 | purchase    |     -46 |      2 |
+	|  7 | withdrawal  |     -12 |      2 |
+	|  8 | purchase    |     -35 |      2 |
+	|  9 | w00t        | 1000000 |      2 |
+	+----+-------------+---------+--------+
+	5 rows in set (0.001 sec)
+
+9)  What CIA attribute is compromised?
+	The CIA attribute that was compromised is Integrity.
+
+10) What are the resulting queries?
+	ERROR 1146 (42S02): Table 'bank.transactions' doesn't exist
+
+11) What CIA attribute is compromised?
+	The CIA attribute that was compromised is Availability.
+
+12) Do the attacks work? Why?
+	This attack does work because accesses data the the user would normally keep hidden and exploits both its Integrety and Avalability.
+

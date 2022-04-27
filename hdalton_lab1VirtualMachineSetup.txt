@@ -1,0 +1,18 @@
+Heather Dalton
+Lab1
+
+1) What is the purpose of sending your public key to the instructor?
+	By sending our public key to the instructor it allows us to have access to our virtual 	matchine via our current computer.
+2) Why did you not have to enter a password? Can anyone get into your virtual machine?
+	A)The reason that I could get into my virtual machine without the password is because I 	have the private key that allows me access.
+	B)No, the only reason they would is if they found out my personal information and 		breatched my confidentiality. 
+3) What is your current username on the remote virtual machine?
+	root@secfarm-106
+4) Is the output from getent different? How?
+	The output is different after going through those two steps because it adds the new user 		that I created.
+5) Why did we add your username to the sudo group?
+	By adding ourself to the sudo group it allows us to access the authority of root without 		being logged into root
+6) What is your current username on the remote virtual machine?
+	hdalton@secfarm-106
+
+

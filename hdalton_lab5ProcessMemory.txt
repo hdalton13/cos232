@@ -1,0 +1,68 @@
+Heather Dalton
+09/28/2020
+
+
+1)  Where is the stack in memory? 
+	The location of my stack is at 26028.
+2)  What are the permissions on the stack?
+	The permissions of the stack are rw-p.
+3)  Is there a heap?
+	There is no heap at this time.
+4)  Where is the actual executable code for sleep loaded in memory?
+	The only executable code for sleep is at:
+	558ccd6d8000-558ccd6d9000 r-xp 00001000 00:37 64608                      /home/hdalton/sleep
+5)  Is there a heap now?
+	After adding the new code there is a heap.
+	ex) 5584a78ef000-5584a7910000 rw-p 00000000 00:00 0                          [heap]
+6)  Is the address of the beginning of the stack less than or greater than the address of the beginning of the heap?
+	The address of the heap is less than the address of the stack.
+	Ex)
+	Stack: 7ffc059a2000-7ffc059c3000 rw-p 00000000 00:00 0                          [stack]
+	Heap: 55aea1f74000-55aea1f95000 rw-p 00000000 00:00 0                          [heap]
+
+7)  What does this code do?
+	The code outputted the address of malloc.
+	Output after running: malloc is a 0x7f555c314350
+	
+8)  What memory range is m:alloc located in at run time? What is the label?
+	a)0
+	b)stack
+
+
+
+
+
+Number 8 comparison:
+
+7ffc059ed000-7ffc059ef000 r-xp 00000000 00:00 0                          [vdso]
+7ffc059ea000-7ffc059ed000 r--p 00000000 00:00 0                          [vvar]
+7ffc059a2000-7ffc059c3000 rw-p 00000000 00:00 0                          [stack]
+7f404fd49000-7f404fd4a000 rw-p 00000000 00:00 0 
+7f404fd48000-7f404fd49000 rw-p 00027000 00:37 1064                       /lib/x86_64-linux-gnu/ld-2.28.so
+7f404fd47000-7f404fd48000 r--p 00026000 00:37 1064                       /lib/x86_64-linux-gnu/ld-2.28.so
+7f404fd3f000-7f404fd47000 r--p 0001f000 00:37 1064                       /lib/x86_64-linux-gnu/ld-2.28.so
+7f404fd21000-7f404fd3f000 r-xp 00001000 00:37 1064                       /lib/x86_64-linux-gnu/ld-2.28.so
+7f404fd20000-7f404fd21000 r--p 00000000 00:37 1064                       /lib/x86_64-linux-gnu/ld-2.28.so
+7f404fd0e000-7f404fd14000 rw-p 00000000 00:00 0 
+7f404fd0c000-7f404fd0e000 rw-p 001ba000 00:37 1082                       /lib/x86_64-linux-gnu/libc-2.28.so
+7f404fd08000-7f404fd0c000 r--p 001b6000 00:37 1082                       /lib/x86_64-linux-gnu/libc-2.28.so
+7f404fd07000-7f404fd08000 ---p 001b6000 00:37 1082                       /lib/x86_64-linux-gnu/libc-2.28.so
+7f404fcbb000-7f404fd07000 r--p 0016a000 00:37 1082                       /lib/x86_64-linux-gnu/libc-2.28.so
+7f404fb73000-7f404fcbb000 r-xp 00022000 00:37 1082                       /lib/x86_64-linux-gnu/libc-2.28.so
+7f404fb51000-7f404fb73000 r--p 00000000 00:37 1082                       /lib/x86_64-linux-gnu/libc-2.28.so
+55aea1f74000-55aea1f95000 rw-p 00000000 00:00 0                          [heap]
+55aea048d000-55aea048e000 rw-p 00003000 00:37 65082                      /home/hdalton/sleep
+55aea048c000-55aea048d000 r--p 00002000 00:37 65082                      /home/hdalton/sleep
+55aea048b000-55aea048c000 r--p 00002000 00:37 65082                      /home/hdalton/sleep
+55aea048a000-55aea048b000 r-xp 00001000 00:37 65082                      /home/hdalton/sleep
+55aea0489000-55aea048a000 r--p 00000000 00:37 65082                      /home/hdalton/sleep
+
+
+
+
+
+
+
+
+
+

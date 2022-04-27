@@ -1,0 +1,32 @@
+Heather Dalton
+09/28/2020
+
+
+1)  What is the purpose of the -g command line flag for gcc?
+	The -g flag provides extra debugging information that only GDB can use. In other words -g adds debugging information.
+	
+2)  List the sizes of all local variables (in bytes)
+	print sizeof(status) -->  4
+	print sizeof(buf) --> 24
+	print sizeof(user_input) -->  4
+	print sizeof(i) -->  4
+
+3)  List the addresses of all local variables (in bytes)
+	print &status --> (int *) 0x7fffffffe4b8
+	print &buf --> (int (*)[6]) 0x7fffffffe4a0
+	print &user_input --> (int *) 0x7fffffffe49c
+	print &i --> (int *) 0x7fffffffe4bc
+
+4)  Predict what index of buf is the address of status?
+	I predict that the address of status is at index 0 of buf 
+	
+5)  What user input to buff will result in an overflow?
+	Overflow will occur when a user inputs data to buf[7].
+	
+6)  Take a photo of your drawing and upload it with your solutions
+
+7)  What is the value of i? Why?
+8)  How did you fix the source code to remedy this buffer overflow vulnerability?
+
+
+*ended on step 7

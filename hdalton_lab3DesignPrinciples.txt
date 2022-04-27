@@ -1,0 +1,46 @@
+Heather Dalton
+09/14/2020
+
+
+1) How has the ownership and permissions changed?
+	Previous Permissions:-rwxr-xr-x 1 hdalton hdalton 43744 Sep 11 18:08 /home/hdalton/supercat
+	Permissions Now: -rwsr-xr-x 1 root root 43744 Sep 11 18:08 /home/hdalton/supercat
+	
+	a) As you can see the permissions changed for the user executable from x to s
+	
+2) Why can supercat read a privileged file when executed by an unprivileged user?
+	A supercat can read a privileged file beause your using sudo without actually being in sudo. 
+	
+3) What security design principle/s are not followed by supercat?
+	Fail-Safe Default, Complete Mediation, and Least Common Mechanism
+	
+4) This activity illustrates a potential vulnerability.
+	4a) What is the vulnerability? 
+		The man.txt file has a lot of information included in it with the history of users that used 		it.
+        4b) What CIA principle is at risk? 
+        	The CIA priciple, Confidentiality, is at risk.
+        
+5) What security design principle has not been followed by the Linux operating system’s file access routines?
+	The security principle that has not been followed by Linux O.S. is Complete Mediation.
+	
+	5a) How would the behavior need to change to follow this security design principle?
+		Linux would have to include a check for whoever is operating using that system.
+		
+6) If there is a potential vulnerability here, why do you think Linux continues to behave this way?
+	I think Linux continues to behave this way becasue it wouldn't be backwards compatable. 
+
+7) Look around (ls, pwd, cd), what do you observe?
+	After typing in the last command it brings me to bash-5.0. When entering ls i get the output files 		of bin, dev, lib, lib64, and proc. The results from entering pwd in the home is just a slash
+	mark(/). After cd into the bin directory and then typing pwd my the new output is /bin.
+
+8) What security design principles are applied with chroot?
+	Least Privilege, Least Common Mechanism
+	
+9) Can other users visit this folder? Would they be stuck?
+	Before the users would be able to visit this folder but now since creating the chroot jail they 	
+	would get stuck. 
+	
+10) How could chroot jail be used to enhance the security of a system?
+	Chroot programs should restrict root access right after a user is done doing its chroot operations. 
+
+

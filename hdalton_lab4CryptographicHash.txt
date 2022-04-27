@@ -1,0 +1,40 @@
+Heather Dalton
+09/18/2020 - 09/21/2020
+
+1) What is stored in the /tmp/passwd file?
+	From what it looks like the passwd file contains the username and encrypted passwords. It looks like:
+		hdalton:$apr1$1.Znl3Fs$0cnrcpNEUKWbkQLcQBdqm1
+		bob:$apr1$ETF7PmM4$6jxb02NZ3fRNcX.7nyg5X0
+		eve:$apr1$NxOgTv0b$eR25GWOgAs.pXOueLaXpH/
+
+2) What cryptographic hashing algorithm is htpasswd using?
+	htpasswd is using apr1 hashing.
+	
+3) What is the purpose of the john command? Briefly describe in your own words how it works.
+	a) John is ment to look at the users passwords and see if they are weak.
+	b) Basically john will look into a password file and decrypt the user's passwords. Once it does that john print the password to a file and keeps track that the password was already cracked.
+	
+4) Were you able to crack the password? Did the length of the password matter?
+	a) The website CrackStation was able to crack the password.
+	b) The length does matter.
+	
+5) Was the password vulnerable because sha256 is weak?
+	The password was not vulnerable becasue of sha256. 
+	
+6) Why is that password compromised?
+      Note: see CrackStation’s description (Links to an external site.) of the word list
+      It is vulnerable because it was common english words.
+      
+7) Did salting help prevent the password from being cracked? Why or why not?
+	Salting the password did prevent the password from being cracked because it added etra random data.
+	 
+8) In our example, is the password mysupersecretsaltsadsonnysdaughter?
+	Yes
+	
+9) If encoding is similar to hashing (and encryption) what is wrong with using it for storing sensitieve information (such as a password)?
+	Storing sensitive information in encoding leaves a big vulnerability because it easier to decode an encoding rather than a hash by just going through different bases.
+	
+10) Was a secret key required to decode the base64 encoded password?
+	No secret key was required to decode the base 64 encoded password. 
+
+

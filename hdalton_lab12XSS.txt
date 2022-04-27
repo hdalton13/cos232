@@ -1,0 +1,28 @@
+Heather Dalton
+11/02/2020
+
+
+1)  What does this script do (dad.php)?
+  	a) Where does user input come from? 
+  		A get command
+    	b) How is user input used?
+2)  What are the parts of the URL?
+  	a) Where is the attack payload?
+    	b) What is the div tag doing?
+3)  What is displayed on this web page?
+4)  Describe an attack scenario that takes advantage of dad.php.
+    	a) Who controls the malicious code?
+    	b) Where is the malicious code stored?
+5)  How could dad.php be changed to fix the vulnerability?
+ 	a) What PHP functions could you use to fix it? You might find the PHP manual to be helpful: https://secure.php.net/manual/en/book.strings.php (Links to an external site.)
+6)  What does this script do (shopping.php)?
+  	a) Where does user input come from?
+    	b) How is user input used?
+7)  What is shoppingitems.txt and why are we running chmod on it?
+8)  What is the attack payload (what does it do)?
+  	a) How does it do it?
+9)  Describe an attack scenario that takes advantage of shopping.php.
+  	a) Who controls the malicious code?
+    	b) Where is the malicious code stored?
+10) How could shopping.php be changed to fix the vulnerability?
+

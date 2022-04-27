@@ -1,0 +1,25 @@
+Heather Dalton
+10/23/2020
+
+
+1)  What is Apache?
+	Apache is a free web server software maintained by many different developers.
+2)  What is MySQL?
+	MySQL is a database management system.
+3)  What is PHP?
+	Is a script languege that can be used to interact with a web server.
+4)  How do you restart Apache?
+	@remot: sudo service apache2 restart
+5)  What is the purpose of git for this activity and the course web project?
+	Allows a person to keep track of there code globally along with seeing previous code. It provides a backup if the local copy gets tampered with.
+6)  How do you make changes to the MySQL database?
+	"sudo mysql" command opends MariaDB which allows a user to us it to interact with the data base using sql.
+7)  What is the purpose of the INSERT statement?
+	Adding a new entry in the data table. 
+8)  What is the purpose of the SELECT statement?
+	Selecting retrieves data from a database.
+9)  What is the purpose of the UPDATE statement?
+	Update allows you to make changes to pre-existing data in the database. 
+10) What is the purpose of the DELETE statement?
+	Delete allows a user to remove sertain specified data from a database.
+

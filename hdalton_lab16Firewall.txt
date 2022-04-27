@@ -1,0 +1,44 @@
+Heather Dalton
+Due: 11/16/2020
+
+1)  What is netfilter and nft?
+	A nft is a commandline tool that allows the iser to inspect packet filtering and classification rules in a Linux Kernal. While from what I understand a Netfilter (nf) is the subsystem of the Linux kernel. This could allow a user to get the table of information.
+	
+2)  What is the name of our table and chain?
+	a) Name of Table= ip
+	b) Name of Chain= input
+	
+3)  What tcp connections are established?
+	 6 431999 ESTABLISHED src=10.121.218.16 dst=10.121.20.106 sport=37434 dport=22 src=10.121.20.106 dst=10.121.218.16 sport=22 dport=37434 [ASSURED] mark=0 use=1
+
+4)  What would happen if we didn’t add this rule?
+	If we didn't add this rule then it wouldn't let anything through the builder.
+
+5)  What is the source port and destination port for the connection to placekitten.com
+	Source Port: 80
+	Destination Port: 80
+	
+	Output from command
+		Resolving placekitten.com (placekitten.com)... 172.67.180.80, 104.18.52.172, 104.18.53.172, ...
+Connecting to placekitten.com (placekitten.com)|172.67.180.80|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+
+6)  How would we change the expression to match UDP desination port 22?
+	By adding a dport 22 at the end of the command.
+	
+7)  What command did you use to add the rule for http?
+	sudo nft add rule ip filter input tcp dport 80 accept
+	
+8)  Are the same ports open as before? Why or why not?
+	Yes they are all still open because I whitlisted them.
+	 
+9)  Why didn’t we set the policy to drop when we created the chain?
+	The reason we didn't set the policy to drop when we created the chain is becasue we didn't know which ones we wanted to allow verses not allow. 
+
+10) (challenge question) Can you construct a rule that rejects all network traffic from Bob?
+	*from what I understand this is extra credit
+
+
+
+-L --dump
+	List connection tracking or expectation table

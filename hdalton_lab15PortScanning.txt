@@ -1,0 +1,40 @@
+Heather Dalton
+Due: 11/13/2020
+
+1)  What hosts did you discover?
+	All the hosts that were listed are apart of our secfarm cs section. It includes secfarm-100 all the way through secfarm-123. 
+
+2)  What ports are listening on your own host?
+	The ports listening to my host are inetd, sshd, apache2, and mysqld.
+
+3)  Are the same ports listed on the external network-based port scan (nmap) as the internal scan (lsof)?
+	They are different becasue it doesn't allow a the user to see theire own personal nmap information. 
+
+4)  What changed? What is smtp? Is Bob running a mail server?
+	a) When bob opened the server alice was able to exit out of his thing when looking at what he could access.
+	b) SMTP is a Simple Mail Transfer Protocol. This allows a user to communicate electronic mail transmissions. 
+	c) No
+
+5)  What operating system is Bob running according Nmap? Is it correct?
+	In this instance Bob was runnng the operating system of Linux. This is correct.
+
+6)  What Nmap command did you use to determine Bob’s operating system?
+	sudo nmap -O 10.121.20.106
+
+7)  What web server (including version) is Bob running according to Nmap? Is Nmap correct?
+	Bob is running the web server Apache/2.4.38 (Debian). Yes this is correct
+
+8)  What Nmap command did you use to determine what web server Bob is running?
+	nmap -sB 10.121.20.106
+
+9)  How long has Bob’s machine been up according to Nmap? Is Nmap correct?
+	a) Nmap said it was 23.492 day.
+	b) This is incorrect the uptime command displayed the time to be:
+		22:16:01 up 77 days, 51 min,  1 user,  load average: 2.21, 2.12, 2.05
+
+
+10) What security design principle does system hardening embody?
+	Least priviledge is the closest security design principle to system hardening.
+
+
+My IP: 10.121.20.106
