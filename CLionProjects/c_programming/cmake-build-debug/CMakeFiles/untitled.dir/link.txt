@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -pedantic -g   CMakeFiles/untitled.dir/prog1.c.o CMakeFiles/untitled.dir/prog2.c.o CMakeFiles/untitled.dir/prog3.c.o  -o untitled 
