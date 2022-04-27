@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/CS/users/hdalton/.linux/CLionProjects/caesarCipher/caeserCipher.c" "/home/CS/users/hdalton/.linux/CLionProjects/caesarCipher/cmake-build-debug/CMakeFiles/untitled.dir/caeserCipher.c.o"
-  "/home/CS/users/hdalton/.linux/CLionProjects/caesarCipher/main.c" "/home/CS/users/hdalton/.linux/CLionProjects/caesarCipher/cmake-build-debug/CMakeFiles/untitled.dir/main.c.o"
+  "/home/CS/users/hdalton/.linux/CLionProjects/Steganography/main.c" "/home/CS/users/hdalton/.linux/CLionProjects/Steganography/cmake-build-debug/CMakeFiles/untitled.dir/main.c.o"
+  "/home/CS/users/hdalton/.linux/CLionProjects/Steganography/steganography.c" "/home/CS/users/hdalton/.linux/CLionProjects/Steganography/cmake-build-debug/CMakeFiles/untitled.dir/steganography.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

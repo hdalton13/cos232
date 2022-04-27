@@ -68,10 +68,10 @@ RM = /opt/clion-2020.2/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/CS/users/hdalton/.linux/CLionProjects/caesarCipher
+CMAKE_SOURCE_DIR = /home/CS/users/hdalton/.linux/CLionProjects/Steganography
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/CS/users/hdalton/.linux/CLionProjects/caesarCipher/cmake-build-debug
+CMAKE_BINARY_DIR = /home/CS/users/hdalton/.linux/CLionProjects/Steganography/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/CS/users/hdalton/.linux/CLionProjects/caesarCipher/cmake-build-debug/CMakeFiles /home/CS/users/hdalton/.linux/CLionProjects/caesarCipher/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/CS/users/hdalton/.linux/CLionProjects/Steganography/cmake-build-debug/CMakeFiles /home/CS/users/hdalton/.linux/CLionProjects/Steganography/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/CS/users/hdalton/.linux/CLionProjects/caesarCipher/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/CS/users/hdalton/.linux/CLionProjects/Steganography/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,33 +143,6 @@ untitled/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
 .PHONY : untitled/fast
 
-caeserCipher.o: caeserCipher.c.o
-
-.PHONY : caeserCipher.o
-
-# target to build an object file
-caeserCipher.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/caeserCipher.c.o
-.PHONY : caeserCipher.c.o
-
-caeserCipher.i: caeserCipher.c.i
-
-.PHONY : caeserCipher.i
-
-# target to preprocess a source file
-caeserCipher.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/caeserCipher.c.i
-.PHONY : caeserCipher.c.i
-
-caeserCipher.s: caeserCipher.c.s
-
-.PHONY : caeserCipher.s
-
-# target to generate assembly for a file
-caeserCipher.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/caeserCipher.c.s
-.PHONY : caeserCipher.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -197,6 +170,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.c.s
 .PHONY : main.c.s
 
+steganography.o: steganography.c.o
+
+.PHONY : steganography.o
+
+# target to build an object file
+steganography.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/steganography.c.o
+.PHONY : steganography.c.o
+
+steganography.i: steganography.c.i
+
+.PHONY : steganography.i
+
+# target to preprocess a source file
+steganography.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/steganography.c.i
+.PHONY : steganography.c.i
+
+steganography.s: steganography.c.s
+
+.PHONY : steganography.s
+
+# target to generate assembly for a file
+steganography.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/steganography.c.s
+.PHONY : steganography.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,12 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... untitled"
-	@echo "... caeserCipher.o"
-	@echo "... caeserCipher.i"
-	@echo "... caeserCipher.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... steganography.o"
+	@echo "... steganography.i"
+	@echo "... steganography.s"
 .PHONY : help
 
 

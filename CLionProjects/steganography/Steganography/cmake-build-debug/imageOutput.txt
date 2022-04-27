@@ -1,0 +1,3 @@
+Pixels start at: 0
+ Width of Image: 0
+ Height of Image 0
